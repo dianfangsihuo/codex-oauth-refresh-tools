@@ -1,0 +1,16 @@
+[
+  {
+    "email": "user@example.com",
+    "type": "codex",
+    "expired": "",
+    "last_refresh": "",
+    "id_token": "OPENAI_ID_TOKEN_OPTIONAL",
+    "access_token": "OPENAI_ACCESS_TOKEN_OPTIONAL",
+    "refresh_token": "OPENAI_REFRESH_TOKEN_OPTIONAL",
+    "mailbox_client_id": "00000000-0000-0000-0000-000000000000",
+    "mailbox_refresh_token": "MICROSOFT_MAILBOX_REFRESH_TOKEN_OPTIONAL",
+    "mailbox_password": "MAILBOX_PASSWORD_OPTIONAL",
+    "mailbox_group": "default"
+  }
+]
+

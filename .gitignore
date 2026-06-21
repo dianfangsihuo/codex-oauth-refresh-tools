@@ -1,0 +1,24 @@
+node_modules/
+AGENTS.md
+
+# Local credential data. Never commit real account exports or refreshed tokens.
+codex_accounts*.json
+!examples/codex_accounts.example.json
+*.bak*
+*.local.*
+mail*.txt
+*邮箱账号导出*
+key.txt
+
+# Runtime artifacts.
+*.log
+*.out.log
+error_*.png
+error_refresh_*.png
+error_login_*.png
+*.png
+.playwright-mcp/
+%SystemDrive%/
+
+# Local project operation log; it may contain account identifiers.
+progress.md

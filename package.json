@@ -1,0 +1,15 @@
+{
+  "name": "codex-oauth-refresh-tools",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Local helper scripts for refreshing Codex OAuth account credentials.",
+  "scripts": {
+    "check": "node --check scripts/codex-oauth-batch-refresh.mjs && node --check scripts/codex-oauth-webui.mjs"
+  },
+  "optionalDependencies": {
+    "playwright": "^1.56.0"
+  },
+  "license": "MIT"
+}
+
