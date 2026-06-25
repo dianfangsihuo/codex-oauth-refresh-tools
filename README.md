@@ -69,6 +69,8 @@ email@example.com----mailbox_password----microsoft_client_id----microsoft_refres
 npm install
 ```
 
+这会安装项目声明的可选 Playwright 依赖，供命令行脚本和本地 WebUI 打开浏览器登录页。
+
 如果不想安装本地依赖，也可以把 Playwright 安装路径放到 `PLAYWRIGHT_NODE_MODULES`。
 
 ## 使用
