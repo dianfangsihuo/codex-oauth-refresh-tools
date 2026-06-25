@@ -10,6 +10,11 @@ if (-not (Test-Path -LiteralPath $script)) {
   throw "WebUI script not found: $script"
 }
 
+$node = Get-Command -Name "node" -ErrorAction SilentlyContinue | Select-Object -First 1
+if (-not $node) {
+  throw "Node.js was not found on PATH. Install Node.js 18 or newer, then run npm install."
+}
+
 $listeners = Get-NetTCPConnection -LocalPort 1466 -State Listen -ErrorAction SilentlyContinue
 foreach ($listener in $listeners) {
   Stop-Process -Id $listener.OwningProcess -Force -ErrorAction SilentlyContinue
@@ -18,7 +23,7 @@ foreach ($listener in $listeners) {
 Start-Sleep -Milliseconds 500
 
 Start-Process `
-  -FilePath "node" `
+  -FilePath $node.Source `
   -ArgumentList @($script) `
   -WorkingDirectory $root `
   -WindowStyle Hidden `
