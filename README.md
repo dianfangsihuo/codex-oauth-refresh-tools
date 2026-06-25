@@ -93,6 +93,8 @@ node .\scripts\codex-oauth-batch-refresh.mjs --accounts .\codex_accounts.local.j
 .\start-webui.ps1
 ```
 
+一键启动脚本会把输出写入 `codex-oauth-webui.log`，把错误写入 `codex-oauth-webui.err.log`。
+
 然后打开：
 
 ```text
