@@ -4,6 +4,24 @@
   "private": false,
   "type": "module",
   "description": "Local helper scripts for refreshing Codex OAuth account credentials.",
+  "homepage": "https://github.com/dianfangsihuo/codex-oauth-refresh-tools#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dianfangsihuo/codex-oauth-refresh-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dianfangsihuo/codex-oauth-refresh-tools/issues"
+  },
+  "keywords": [
+    "codex",
+    "oauth",
+    "openai",
+    "refresh-token",
+    "playwright"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "check": "node --check scripts/codex-oauth-batch-refresh.mjs && node --check scripts/codex-oauth-webui.mjs"
   },
